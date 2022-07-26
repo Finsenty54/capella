@@ -19,9 +19,10 @@ import org.polarsys.capella.common.activator.AbstractCommonActivator;
 /**
  * The activator class controls the plug-in life cycle
  */
+// git修改测试
 public class MdeCommonActivator extends AbstractCommonActivator {
   // The shared instance
-  private static MdeCommonActivator plugin;
+  private static MdeCommonActivator plugin; //声明一个静态字段以引用该个体，供其他内容引用
 
   /**
    * {@inheritDoc}

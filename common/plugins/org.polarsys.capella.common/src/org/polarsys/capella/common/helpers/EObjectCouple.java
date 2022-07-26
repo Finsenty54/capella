@@ -24,38 +24,39 @@ import org.polarsys.capella.common.mdsofa.common.misc.Couple;
  * This class can be used to instantiate a multiple key as a Map key
  */
 public class EObjectCouple extends Couple<EObject, EObject> {
-  /**
-   * Default constructor
-   * @param key
-   * @param value
-   */
-  public EObjectCouple(EReference key, EClass value) {
-    super(key, value);
-  }
+	/**
+	 * Default constructor
+	 * 
+	 * @param key
+	 * @param value
+	 */
+	public EObjectCouple(EReference key, EClass value) {
+		super(key, value);
+	}
 
-  /**
-   * @see java.lang.Object#equals(java.lang.Object)
-   */
-  @Override
-  public boolean equals(Object obj) {
-    boolean cr = super.equals(obj);
-    if (!cr && (obj instanceof EObjectCouple)) {
-      EObjectCouple eObjectCouple = (EObjectCouple) obj;
-      cr = (getKey() == eObjectCouple.getKey());
-      cr = (cr) ? (getValue() == eObjectCouple.getValue()) : false;
-    }
-    return cr;
-  }
+	/**
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		boolean cr = super.equals(obj);
+		if (!cr && (obj instanceof EObjectCouple)) {
+			EObjectCouple eObjectCouple = (EObjectCouple) obj;
+			cr = (getKey() == eObjectCouple.getKey());
+			cr = (cr) ? (getValue() == eObjectCouple.getValue()) : false;
+		}
+		return cr;
+	}
 
-  /**
-   * @see java.lang.Object#hashCode()
-   */
-  @Override
-  public int hashCode() {
-    // Based on Thinking In Java book : Overriding hashCode( ) chapter 11
-    int result = 17;
-    result = 37 * result + getKey().hashCode();
-    result = 37 * result + getValue().hashCode();
-    return result;
-  }
+	/**
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		// Based on Thinking In Java book : Overriding hashCode( ) chapter 11
+		int result = 17;
+		result = 37 * result + getKey().hashCode();
+		result = 37 * result + getValue().hashCode();
+		return result;
+	}
 }

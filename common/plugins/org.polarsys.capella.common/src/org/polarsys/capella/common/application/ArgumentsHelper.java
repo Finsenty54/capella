@@ -28,7 +28,7 @@ public class ArgumentsHelper {
 
   private boolean defaultLoaded = false;
 
-  private static ArgumentsHelper instance = new ArgumentsHelper();
+  private static ArgumentsHelper instance = new ArgumentsHelper(); //定义时直接创建
 
   public static ArgumentsHelper getInstance() {
     return instance;

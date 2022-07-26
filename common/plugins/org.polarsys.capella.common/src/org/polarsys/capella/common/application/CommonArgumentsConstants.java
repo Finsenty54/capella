@@ -12,7 +12,7 @@
  *******************************************************************************/
 package org.polarsys.capella.common.application;
 
-import org.eclipse.osgi.util.NLS;
+import org.eclipse.osgi.util.NLS; //消息操作类
 
 public class CommonArgumentsConstants extends NLS {
   private static final String BUNDLE_NAME = "org.polarsys.capella.common.application.messages"; //$NON-NLS-1$
