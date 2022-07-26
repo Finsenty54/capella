@@ -28,7 +28,7 @@ public class ArgumentsHelper {
 
   private boolean defaultLoaded = false;
 
-  private static ArgumentsHelper instance = new ArgumentsHelper(); //¶¨ÒåÊ±Ö±½Ó´´½¨
+  private static ArgumentsHelper instance = new ArgumentsHelper(); //åˆ›å»ºé™æ€å®ä¾‹
 
   public static ArgumentsHelper getInstance() {
     return instance;

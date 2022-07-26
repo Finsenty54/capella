@@ -26,10 +26,10 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EAttribute; //ÊôĞÔ represents an attribute which has a name and a type.
+import org.eclipse.emf.ecore.EAttribute; //å±æ€§ represents an attribute which has a name and a type.
 import org.eclipse.emf.ecore.EClass; //represents a class
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EReference; //±íÊ¾Á½¸öÀàÖ®¼ä¹ØÁªµÄÒ»¶Ë¡£
+import org.eclipse.emf.ecore.EReference; //è¡¨ç¤ºä¸¤ä¸ªç±»ä¹‹é—´å…³è”çš„ä¸€ç«¯ã€‚
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EStructuralFeature.Setting;
 import org.eclipse.emf.ecore.InternalEObject;

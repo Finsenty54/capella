@@ -12,7 +12,7 @@
  *******************************************************************************/
 package org.polarsys.capella.common.application;
 
-import org.eclipse.osgi.util.NLS; //��Ϣ������
+import org.eclipse.osgi.util.NLS; //所有消息束类的公共超类。提供了操作消息的方便方法。
 
 public class CommonArgumentsConstants extends NLS {
   private static final String BUNDLE_NAME = "org.polarsys.capella.common.application.messages"; //$NON-NLS-1$
