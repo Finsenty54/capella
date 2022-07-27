@@ -42,7 +42,7 @@ public class EObjectCouple extends Couple<EObject, EObject> {
 		boolean cr = super.equals(obj);
 		if (!cr && (obj instanceof EObjectCouple)) {
 			EObjectCouple eObjectCouple = (EObjectCouple) obj;
-			cr = (getKey() == eObjectCouple.getKey());
+			cr = (getKey() == eObjectCouple.getKey()); //返回key
 			cr = (cr) ? (getValue() == eObjectCouple.getValue()) : false;
 		}
 		return cr;

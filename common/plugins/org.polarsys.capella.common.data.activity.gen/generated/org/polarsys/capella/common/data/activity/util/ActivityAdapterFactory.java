@@ -55,6 +55,8 @@ import org.polarsys.kitalpha.emde.model.ExtensibleElement;
  * <!-- begin-user-doc -->
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
+ * 适配器模式把一个类的接口转换成客户端期待的另外一种接口,中间再加了一层
+ * 工厂定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。
  * <!-- end-user-doc -->
  * @see org.polarsys.capella.common.data.activity.ActivityPackage
  * @generated

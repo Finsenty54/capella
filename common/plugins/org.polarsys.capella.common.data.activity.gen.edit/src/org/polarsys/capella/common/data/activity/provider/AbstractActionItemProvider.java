@@ -53,6 +53,7 @@ public class AbstractActionItemProvider
 		IItemPropertySource {
 	/**
 	 * <!-- begin-user-doc -->
+	 * 适配器加了一层，中间操作已有的类，进行包装，以提供客户期望的类
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */

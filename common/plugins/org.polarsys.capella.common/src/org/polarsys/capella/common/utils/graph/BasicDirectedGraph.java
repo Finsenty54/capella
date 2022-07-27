@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A simple implementation of DirectedGraph
+ * A simple implementation of DirectedGraph 有向图
  */
 public class BasicDirectedGraph<T> implements IDirectedGraph<T> {
 

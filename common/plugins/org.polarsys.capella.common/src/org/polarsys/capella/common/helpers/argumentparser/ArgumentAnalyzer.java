@@ -357,7 +357,7 @@ public class ArgumentAnalyzer {
         throw new ArgumentAnalyzerException(Messages.strictModeParseFailed);
       }
       
-      currentFlagFromCmdLine = arguments[idx];
+      currentFlagFromCmdLine = arguments[idx]; //得到参数
       
       currentFlagId = entry.getKey();
       currentFlag = entry.getValue();

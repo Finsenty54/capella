@@ -25,11 +25,11 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 /**
- * This class contains convenient static methods for querying a EMF model
+ * This class contains convenient static methods for querying 查询 a EMF model
  */
 public class GetAllQueries implements IGetAllQueries {
   /**
-   * Retrieve EObject instances corresponding to a type and accessible from a source object by successive compositions
+   * Retrieve 检索 EObject instances corresponding to a type and accessible from a source object by successive compositions
    * 
    * @param source
    *          element from which the search starts
@@ -43,13 +43,13 @@ public class GetAllQueries implements IGetAllQueries {
     if (source == null || targetType == null)
       return result;
 
-    if (targetType.isAssignableFrom(source.getClass())) {
-      result.add(source);
+    if (targetType.isAssignableFrom(source.getClass())) { //tar 是source的父类或者超接口或者相同
+      result.add(source);	//getclass() 获取类的运行时信息，构造函数，成员变量等；class 也是object的子类，类可以视为一个变量，一个对象
     }
 
     EList<EObject> containedElements = source.eContents();
     for (EObject object : containedElements) {
-      result.addAll(getAll(object, targetType));
+      result.addAll(getAll(object, targetType)); //开始递归
     }
 
     return result;

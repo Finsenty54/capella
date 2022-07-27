@@ -16,9 +16,9 @@
  */
 package org.polarsys.capella.common.utils;
 
-import java.lang.reflect.Field;
+import java.lang.reflect.Field; //代表类中的成员变量（静态变量+实例变量）
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import java.lang.reflect.Method; //代表类中的方法，类中方法的信息，访问
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,6 +28,7 @@ import org.eclipse.core.runtime.Assert;
 
 /**
  * Provides helper methods for manipulating objects reflectively.
+ * Java反射就是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；并且能改变它的属性
  */
 public final class ReflectUtil {
   /**

@@ -23,7 +23,7 @@ public final class Flag {
 
   /** Accessor on flag Id */
   public String getName() {return _name;}
-  /** Is this flag mandatory */
+  /** Is this flag mandatory 强制性*/
   public boolean isMandatory() {return _isMandatory;}
   /** Accessor on number of expected data linked to this flag */
   public int getNumberOfData() {return _numberOfExpectedData;}

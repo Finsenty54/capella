@@ -20,9 +20,11 @@ public class CommonArgumentsConstants extends NLS {
   public static String LOG_FILE_PATH;
   public static String LOG_FILE_PATH__DESCRIPTION;
   
+//  LOG_FILE_PATH=-logfile
+//  LOG_FILE_PATH__DESCRIPTION=-logfile value : defines the path to the log file.
   
   static {
-    // initialize resource bundle
+    // initialize resource bundle 将messages.properties文件中的值初始化类
     NLS.initializeMessages(BUNDLE_NAME, CommonArgumentsConstants.class);
   }
 

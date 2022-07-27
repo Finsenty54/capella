@@ -43,6 +43,7 @@ import org.polarsys.capella.common.mdsofa.common.constant.ICommonConstants;
  * Provide services to display EObject.
  */
 public class EObjectLabelProviderHelper {
+  //final 不可改变
   /**
    * Suffix used by EMF Edit when generating feature labels.
    */

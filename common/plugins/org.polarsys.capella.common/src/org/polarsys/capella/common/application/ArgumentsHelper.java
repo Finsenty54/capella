@@ -37,22 +37,22 @@ public class ArgumentsHelper {
   private void loadArguments() {
     if (!defaultLoaded) {
       defaultLoaded = true;
-      loadArguments(Platform.getApplicationArgs());
+      loadArguments(Platform.getApplicationArgs()); //返回框架实现本身未使用的参数。
     }
   }
 
   public void loadArguments(String[] args) {
     if (values == null) {
-      values = new HashMap<String, String>();
+      values = new HashMap<String, String>(); //创建hashmap
     }
 
     for (int i = 0; i < args.length; i++) {
-      String arg = args[i].toLowerCase();
+      String arg = args[i].toLowerCase(); //换为小写
 
-      if (arg.startsWith("-")) { //$NON-NLS-1$
-        String value = i < args.length - 1 ? args[i + 1] : null;
+      if (arg.startsWith("-")) { //$NON-NLS-1$ 字符是否是以‘-’开始
+        String value = i < args.length - 1 ? args[i + 1] : null; //value是下一个参数，最后一个参数没有
         if (value != null && !value.startsWith("-")) { //$NON-NLS-1$
-          values.put(arg, value);
+          values.put(arg, value); //推入hashmap: [当前参数，下一个参数] 即一个选项 和 选项的值
         } else
           values.put(arg, null);
       }
@@ -63,7 +63,7 @@ public class ArgumentsHelper {
     loadArguments();
     String arg = parameter.toLowerCase();
     if (values.containsKey(arg)) {
-      return values.get(arg);
+      return values.get(arg); //根据选项返回值
     }
     return null;
   }

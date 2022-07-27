@@ -46,7 +46,7 @@ import org.polarsys.capella.common.utils.RunnableWithBooleanResult;
  * This class contains convenient static methods for working with EMF objects.
  */
 public class EcoreUtil2 {
-  public static String defaultPattern = "{1} {0}"; //$NON-NLS-1$
+  public static String defaultPattern = "{1} {0}"; //$NON-NLS-1$ 静态字段，所有实例共享一个空间
 
   /**
    * Attach 'tgtElt' to the same container as 'srcElt', with the same containment feature.
@@ -55,8 +55,10 @@ public class EcoreUtil2 {
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
   public static void attachLikeSourceContainer(EObject srcElt, EObject tgtElt) {
+	//https://download.eclipse.org/modeling/emf/emf/javadoc/2.6.0/org/eclipse/emf/ecore/package-summary.html
+	//Ecore建模框架中的所有参与者都实现了EObject的接口，EObject是所有类的基类
     EObject container = srcElt.eContainer();
-    EStructuralFeature eStructFeatureFound = srcElt.eContainingFeature();
+    EStructuralFeature eStructFeatureFound = srcElt.eContainingFeature(); //返回特征，即Containment，Container等
     if (eStructFeatureFound != null) {
       if (!eStructFeatureFound.isMany()) {
         container.eSet(eStructFeatureFound, tgtElt);

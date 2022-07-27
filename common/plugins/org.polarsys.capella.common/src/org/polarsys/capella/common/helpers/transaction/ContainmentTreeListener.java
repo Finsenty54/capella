@@ -50,7 +50,7 @@ public abstract class ContainmentTreeListener extends ResourceSetListenerImpl {
    * or the RESOURCE_CONTENTS pseudo reference.
    */
   private static class ContainmentChangeFilter extends NotificationFilter.Custom {
-    @Override
+    @Override //将覆盖父类中的函数
     public boolean matches(Notification notification) {
       // ... on containment references
       if (notification.getFeature() instanceof EReference
