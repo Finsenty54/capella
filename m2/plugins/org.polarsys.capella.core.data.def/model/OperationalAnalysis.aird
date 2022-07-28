@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_J_qDwA44Ee26jZTZRMIbpQ" selectedViews="_KBIqcA44Ee26jZTZRMIbpQ _KCA0MA44Ee26jZTZRMIbpQ _KCHh4A44Ee26jZTZRMIbpQ _KCIwAA44Ee26jZTZRMIbpQ _KCLMQA44Ee26jZTZRMIbpQ" version="14.6.0.202110251100">
+  <semanticResources>OperationalAnalysis.ecore</semanticResources>
+  <semanticResources>CompositeStructure.ecore</semanticResources>
+  <semanticResources>CapellaCore.ecore</semanticResources>
+  <semanticResources>platform:/resource/org.polarsys.capella.common.data.def/model/ModellingCore.ecore</semanticResources>
+  <semanticResources>platform:/plugin/org.polarsys.kitalpha.emde/model/eMDE.ecore</semanticResources>
+  <semanticResources>Requirement.ecore</semanticResources>
+  <semanticResources>CapellaCommon.ecore</semanticResources>
+  <semanticResources>LogicalArchitecture.ecore</semanticResources>
+  <semanticResources>ContextArchitecture.ecore</semanticResources>
+  <semanticResources>FunctionalAnalysis.ecore</semanticResources>
+  <semanticResources>platform:/resource/org.polarsys.capella.common.data.def/model/Activity.ecore</semanticResources>
+  <semanticResources>platform:/resource/org.polarsys.capella.common.data.def/model/Behavior.ecore</semanticResources>
+  <semanticResources>Information.ecore</semanticResources>
+  <semanticResources>Interaction.ecore</semanticResources>
+  <semanticResources>EPBSArchitecture.ecore</semanticResources>
+  <semanticResources>PhysicalArchitecture.ecore</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" uid="_KBIqcA44Ee26jZTZRMIbpQ">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" uid="_KCA0MA44Ee26jZTZRMIbpQ">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" uid="_KCHh4A44Ee26jZTZRMIbpQ">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" uid="_KCIwAA44Ee26jZTZRMIbpQ">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" uid="_KCLMQA44Ee26jZTZRMIbpQ">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Generation']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

@@ -30,9 +30,9 @@ import org.polarsys.kitalpha.emde.model.ExtensibleElement;
  *   <li>{@link org.polarsys.capella.common.data.modellingcore.ModelElement#getOwnedConstraints <em>Owned Constraints</em>}</li>
  *   <li>{@link org.polarsys.capella.common.data.modellingcore.ModelElement#getOwnedMigratedElements <em>Owned Migrated Elements</em>}</li>
  * </ul>
- *
+ * java注释model，使得方法定义在接口中
  * @see org.polarsys.capella.common.data.modellingcore.ModellingcorePackage#getModelElement()
- * @model abstract="true"
+ * @model abstract="true" 
  *        annotation="http://www.polarsys.org/capella/2007/BusinessInformation Label='ModelElement'"
  *        annotation="http://www.polarsys.org/capella/2007/UML2Mapping metaclass='Element'"
  *        annotation="http://www.polarsys.org/kitalpha/ecore/documentation description='common base for all Capella elements\r\n[source: Capella study]' usage\040guideline='n/a (Abstract)' used\040in\040levels='operational,system,logical,physical,epbs' usage\040examples='n/a' constraints='none' comment/notes='none' reference\040documentation='none'"

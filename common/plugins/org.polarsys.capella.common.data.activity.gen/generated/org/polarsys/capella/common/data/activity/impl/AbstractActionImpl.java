@@ -219,7 +219,7 @@ public abstract class AbstractActionImpl extends ExecutableNodeImpl implements A
 			msgs = basicSetLocalPrecondition(newLocalPrecondition, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
-		else if (eNotificationRequired())
+		else if (eNotificationRequired()) //发布通知
 			eNotify(new ENotificationImpl(this, Notification.SET, ActivityPackage.ABSTRACT_ACTION__LOCAL_PRECONDITION, newLocalPrecondition, newLocalPrecondition));
 
 	}
